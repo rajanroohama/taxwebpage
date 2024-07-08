@@ -1,0 +1,503 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 38px;
+    background-color: #003153;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navcont {
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navleft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align menu items to the left */
+}
+
+.navmenu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navitem {
+    margin-left: 20px;
+}
+
+.navitem a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navitem a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navitem a i {
+    margin-right: 8px;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-left: 20px;
+}
+
+.social-icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #1DA1F2;
+    transform: scale(1.1);
+}
+
+.header img{
+    max-width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+.subnav {
+    background-color: #ffffff;
+    height: 70px; 
+    width: 100%;
+}
+
+.subnavcont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.subnavleft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.subnavsocialicon {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.subnavsocialicon li {
+    margin-right: 10px;
+}
+
+.subnavsocialicon li i {
+    font-size: 24px;
+    color: #000000;
+}
+
+.subnavmenu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.subnavmenu li {
+    margin-left: 20px;
+}
+
+.subnavmenu li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.subnavmenu li a:hover {
+    color: #184593;
+}
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://s3-alpha-sig.figma.com/img/1ddc/436b/6b3dff1d785de0fec8290c62135ab0b1?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DGAu~MMxu7WK48hpe49-w41gK7TW2xFQtlOmczlI9ZcHshbl4~JoG-uYdEydutwfXSGaFywcfUvtO3~lKo-hcgKK-Bj5jp3rh5IGZZnQE9MyBmorrgyEMFp0wyX40W68l1Nv7osi7QVv-hL1Y4yiwycvvSKPWWINoKkbCAHYbZ0CbiFbEjF3X44hJXOxN04-4txF8hLmFpJKFvYwpNalye7qhGxIaPEIOYGZJME40g6t2mMsBU43vcHzPAXO5wPmDSpsYeXMOe2I6gclNh8ZgdnCyybXlCS77Lhl5QSA1ugSBESsVnqBbjztNIEtqpAJC1vqe49rUXOj8kz0h1tP9Q__);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 200px 20px;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.col {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #02022b;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 150px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 0;
+    background-color: #48D1CC;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15073d;
+}
+.login {
+    position: absolute;
+    top: 80px;
+    right: 140px;
+    width: 350px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    height: 460px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+    color: #02022b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    margin-bottom: 20px;
+}
+
+.inputbox label {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.inputbox input {
+    width: 90%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputbox input:focus {
+    border-color: #1e90ff;
+}
+
+.checkbox-label {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.checkbox-label a {
+    color: blue;
+}
+
+.btn .icon {
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.footercontainer {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footerbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 1rem 0;
+}
+
+.footerlayer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.footerlayer:hover {
+    transform: translateY(-5px);
+}
+
+.footerlayer i {
+    font-size: 2rem;
+    color: #2d7ab0;
+    margin-bottom: 10px;
+}
+
+.footerlayer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.footerlayer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        width: 180%;
+        height: 128px;
+    }
+    .navcont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navleft, .navright {
+        width: 100%;
+        margin-bottom: -20px;
+    }
+
+    .navmenu {
+        justify-content: center;
+    }
+
+    .navitem {
+        margin: 0 10px;
+    }
+    .navitem a{
+        font-size: 8px;
+    }
+
+    .social-icons {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-icons li {
+        margin: 0 10px;
+        margin-top: 25px;
+    }
+    .social-icons li a {
+        margin: 5px 20px;
+    }
+    .header img{
+        max-width: 30px;
+    }
+    .subnav {
+        width: 180%;
+        height: auto; 
+        padding: 10px; /
+    }
+
+    .subnavcont {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 5px; 
+    }
+
+    .subnavleft {
+        margin-bottom: 5px; 
+    }
+
+    .subnavsocialicon li {
+        margin-right: 5px; 
+    }
+
+    .subnavsocialicon li i {
+        font-size: 18px; 
+    }
+
+    .subnavmenu {
+        justify-content: center; 
+        
+    }
+
+    .subnavmenu li {
+        margin: 0 10px; 
+    }
+
+    .subnavmenu li a {
+        font-size: 9.3px; /
+    }
+    .container {
+        padding: 40px 10px; 
+        width: 180%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .col {
+        padding: 0 10px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-left: 15px; 
+    }
+    p{
+        margin-left: 45px;
+    }
+    button {
+        margin-left: 40px;
+    }
+    .login {
+        position: static;
+        width: auto;
+        margin: 20px auto;
+        padding: 65px;
+        
+    }
+
+    .login h2 {
+        font-size: 20px;
+    }
+
+    .inputbox label {
+        font-size: 14px;
+    }
+
+    .inputbox input {
+        height: 35px;
+        font-size: 12px;
+        width: 200px;
+        padding-left: 180px;
+    }
+
+    .checkbox-label {
+        font-size: 12px;
+    }
+
+    .btn .icon {
+        font-size: 12px;
+    }
+    .footer{
+        width: 570px;
+    }
+    .footerbox {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .footerlayer {
+        width: 90%;
+        max-width: 100%;
+        padding: 25px; 
+        margin-bottom: 20px; 
+    }
+
+    .footerlayer i {
+        font-size: 1.8rem; /
+    }
+
+    .footerlayer h4 {
+        font-size: 1.3rem; 
+    }
+
+    .footerlayer p {
+        font-size: 1rem; 
+    }
+}
+
+
